@@ -1,0 +1,53 @@
+.trending{
+    --gap: 1.5rem;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--gap);
+    counter-reset: count;
+
+    &__card{
+        gap: var(--gap);
+        counter-increment: count;
+    }
+
+    &__img{
+        width: 100px;
+    }
+
+    &__info{
+        --gap: 0.5rem;
+        gap: var(--gap);
+
+    }
+
+    &__counter{
+        font-weight: var(--fw-800);
+        font-size: 1.75rem;
+        color: var(--clr-grayishBlue);
+
+        &::before{
+            content: "0"counter(count);
+        }
+
+    }
+
+    &__heading{
+        font-size: var(--fs-600);
+        color: var(--clr-veryDarkBlue);
+        font-weight: var(--fw-800);
+        transition: color 0.3s;
+        cursor: pointer;
+
+        &:hover{
+            color: var(--clr-red);
+        }
+    }
+
+    &__text{
+        line-height: 1.7;
+    }
+
+    @media screen and (max-width: 60em){
+        --gap: 2.125rem;
+        grid-template-columns: 1fr;
+    }
+}

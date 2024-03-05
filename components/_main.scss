@@ -1,0 +1,82 @@
+.main{
+    --col-gap: 1.875rem;
+    --row-gap: 2.375rem;
+
+    grid-template-columns: repeat(3,1fr);
+    column-gap: var(--col-gap);
+    row-gap: var(--row-gap);
+    margin-bottom: 4.5rem;
+
+    &__hero{
+
+        &--desktop{
+            grid-column: 1 / span 2;
+
+            @media screen and (max-width: 60em){
+                display: none;
+            }
+        }
+
+        &--mobile{
+            display: none;
+
+            @media screen and (max-width: 60em){
+                display: block;
+                width: 100%;
+                margin-bottom: 1.625rem;
+            }
+        }
+    }
+
+    &__heading{
+        font-size: var(--fs-900);
+        color: var(--clr-veryDarkBlue);
+        font-weight: var(--fw-800);
+
+        @media screen and (max-width: 60em){
+            margin-bottom: 1.25rem;
+        }
+        
+    }
+
+    &__info{
+        @media screen and (max-width: 60em){
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__text{
+        line-height: 1.4;
+        margin-bottom: 2.5rem;
+
+        @media screen and (max-width: 60em){
+            margin-bottom: 1.75rem;
+            line-height: 1.5;
+        }
+    }
+
+    &__button{
+        width: 185px;
+        height: 48px;
+        border: none;
+        background-color: var(--clr-red);
+        color: var(--clr-offWhite);
+        font-weight: var(--fw-700);
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover{
+            background-color: var(--clr-veryDarkBlue);
+        }
+
+    }
+
+    @media screen and (max-width: 60em){
+        --row-gap: 0;
+        grid-template-columns: 1fr;
+        margin-bottom: 4rem;
+    }
+}

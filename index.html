@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="grid jc-c">
+    <div class="container">
+      <header class="header flex ai-c jc-sb">
+        <img src="images/logo.svg" alt="" class="header__logo" />
+        <nav>
+          <ul role="list" class="header__nav flex" id="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
+        <img src="images/icon-menu.svg" alt="" class="header__menu" id="menu" />
+        <img
+          src="images/icon-menu-close.svg"
+          alt=""
+          class="header__close"
+          id="close"
+        />
+      </header>
+      <main class="main grid">
+        <img
+          class="main__hero--desktop"
+          src="images/image-web-3-desktop.jpg"
+          alt="image-web-3"
+        />
+        <img
+          class="main__hero--mobile"
+          src="images/image-web-3-mobile.jpg"
+          alt="image-web-3"
+        />
+        <h1 class="main__heading">The Bright Future of Web 3.0?</h1>
+        <div class="main__info">
+          <p class="main__text">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <button class="main__button">Read more</button>
+        </div>
+        <section class="new">
+          <h2 class="new__heading">New</h2>
+          <div class="new__news">
+            <h3 class="new__topic">Hydrogen VS Electric Cars</h3>
+            <p class="new__info">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+          <div class="new__news">
+            <h3 class="new__topic">The Downsides of AI Artistry</h3>
+            <p class="new__info">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div class="new__news">
+            <h3 class="new__topic">Is VC Funding Drying Up?</h3>
+            <p class="new__info">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </section>
+      </main>
+      <section class="trending grid">
+        <div class="trending__card flex">
+          <img
+            class="trending__img"
+            src="images/image-retro-pcs.jpg"
+            alt="image-retro-pcs"
+          />
+          <div class="trending__info grid">
+            <div class="trending__counter"></div>
+            <h4 class="trending__heading">Reviving Retro PCs</h4>
+            <p class="trending__text">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <div class="trending__card flex">
+          <img
+            class="trending__img"
+            src="images/image-top-laptops.jpg"
+            alt="image-top-laptops"
+          />
+          <div class="trending__info grid">
+            <div class="trending__counter"></div>
+            <h4 class="trending__heading">Top 10 Laptops of 2022</h4>
+            <p class="trending__text">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+        <div class="trending__card flex">
+          <img
+            class="trending__img"
+            src="images/image-gaming-growth.jpg"
+            alt="image-gaming-growth"
+          />
+          <div class="trending__info grid">
+            <div class="trending__counter"></div>
+            <h4 class="trending__heading">The Growth of Gaming</h4>
+            <p class="trending__text">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="bg-overlay"></div>
+    <script src="index.js"></script>
+  </body>
+</html>

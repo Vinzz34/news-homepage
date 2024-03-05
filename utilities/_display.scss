@@ -1,0 +1,11 @@
+.display-none{
+    @media screen and (max-width: 60em){
+        display: none;
+    }
+}
+
+.display-block{
+    @media screen and (max-width: 60em){
+        display: block;
+    }
+}

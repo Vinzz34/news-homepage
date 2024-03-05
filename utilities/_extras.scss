@@ -1,0 +1,19 @@
+.nav-animation{
+    @media screen and (max-width: 60em){
+        transform: translateX((0%));
+    }
+}
+
+.bg-overlay{
+    @media screen and (max-width: 60em){
+        background-color: rgba(0,0,0,0.2);
+        position: absolute;
+        inset: 0;
+    }
+}
+
+.overflow-hidden{
+    @media screen and (max-width: 60em){
+        overflow: hidden;
+    }
+}
